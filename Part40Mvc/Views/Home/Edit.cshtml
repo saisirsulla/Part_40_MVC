@@ -1,0 +1,33 @@
+﻿@model Part40Mvc.Models.Employee
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel();
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/bootstrap.min.js"></script>
+<script src="~/scripts/jquery.timepicker.min.js"></script>
+<script>
+  
+
+    $(function () {
+        $(".txtdate").timepicker();
+    });
+</script>
+
+
+

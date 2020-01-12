@@ -1,0 +1,1 @@
+ Using displayname, displayformat, scaffoldcolumn attributes in asp net mvc application
